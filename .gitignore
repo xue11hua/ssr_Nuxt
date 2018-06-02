@@ -1,0 +1,12 @@
+#配置git不上传的文件
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
