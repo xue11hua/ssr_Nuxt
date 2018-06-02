@@ -4,11 +4,11 @@
 
 #Nuxt vue ssr服务端渲染
 
-#安装 安装后vue-cli
+#安装 安装vue-cli后
 
 ##vue init nuxt/starter
 
-##package.json里配置端口config
+##package.json里配置ip端口config
 
 #nuxt.config.js里引入全局css
 
