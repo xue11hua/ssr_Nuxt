@@ -13,6 +13,8 @@
       <li><nuxt-link :to="{name:'anyc'}">anyc</nuxt-link></li>
       <li><nuxt-link :to="{name:'user'}">user</nuxt-link></li>
     </ul>
+    <el-button type="primary">主要按钮</el-button>
+    
   </div>
 </template>
 

@@ -38,3 +38,19 @@
 
 #在dist文件夹下输入live-server
 
+###跨域处理
+
+# npm i @nuxtjs/axios @nuxtjs/proxy -D
+# 然后在 nuxt.config.js 文件里进行配置
+modules: [
+  '@nuxtjs/axios'
+],
+axios: {
+  proxy: true
+},
+proxy: {
+  '/api': {
+    target: 'xxx.target.com',
+    pathRewrite: { '^/api': '' }
+  }
+}

@@ -21,14 +21,34 @@ module.exports = {
   ** 进度条颜色，页面顶部
   */
   loading: { color: '#3B8070' },
+  //引入element框架
+  plugins: [ '~/plugins/element-ui'],
+
+  //设置跨域
+
+  modules: [
+    '@nuxtjs/axios',
+  ],
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    '/api': {
+      target: 'https://api.douban.com/',//代理的网址 https://api.douban.com/v2/movie/subject/1764796
+      pathRewrite: { '^/api': '' }
+    }
+  },
+
   /*
   ** Build configuration
   */
   build: {
+    //避免多次打包axios和element
+     vendor: ['axios','element-ui'],
      /*
     ** 对webpack的基本配置进行覆盖
     */
-    
+   
 
 
     /*
